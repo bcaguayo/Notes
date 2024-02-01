@@ -17,6 +17,12 @@ You would only use `new` if you wanted to dynamically allocate an object and obt
 Within member functions of the class, we have access to the `this` keyword, which is a pointer to the object that the member function was invoked on.
 Note that this is a pointer rather than a reference, so using it requires us to do `this->x`, not `this.x`.
 
+- Structs are used to consolidate data together mainly.
+Has functions sometimes to manipulate data, convert to String, send.
+Very basic data manipulation.
+
+- Classes have constructors and methods on top. Does something more complex.
+
 ### Access Modifiers
 
 C++ has the familiar access modifiers of private (only accessible within the class), protected (only accessible within the class and descendant classes), and public (accessible to all).
@@ -25,6 +31,8 @@ With a `class`, members are private by default and with a `struct`, members are 
 This is the *only* difference between `class` and `struct`.
 
 https://github.com/CIS-1901-F24/Notes/blob/c6d2bac48e123afba17050fec0d19c704f508574/03/point2.cpp#L1-L27
+
+- public, private, protected (has to ddo with inheritance).
 
 ### Constructors
 
@@ -53,6 +61,8 @@ If we do this and remove our other constructor as well, then this would make it 
 Default values for member variables can also be specified where they are declared, which is used to initialize the variable if it was not already initialized in an initializer list.
 
 https://github.com/CIS-1901-F24/Notes/blob/c6d2bac48e123afba17050fec0d19c704f508574/03/point4.cpp#L1-L24
+
+- 
 
 ### `const`
 
@@ -103,6 +113,11 @@ This is like a namespace, where we are specifying that we mean the function foun
 
 Now we go over some of the reasoning behind these choices.
 
+- Include copies over the code from the file included literally.
+- step 1: preprocessor does all includes and defines.
+- step 2: cpp gets compiled into assembly.
+- step 3: linker - assembly gets linked into an executable.
+
 ### One Definition Rule
 
 Just as in C, multiple *declarations* of functions are allowed as long as the declarations are the same.
@@ -117,6 +132,10 @@ However there can be multiple definitions in different translation units, as lon
 This is because the definition of the class is required for the compiler to determine its size (by looking at its members), which is needed to generate code for things like function arguments.
 
 More details about the one definition rule can be found [here](https://en.wikipedia.org/wiki/One_Definition_Rule).
+
+- ifndef prevents you from recursively including the same file.
+- inline functions are allowed to be defined multiple times.
+- you give the guarantee that the funcitons are equal.
 
 ### Include Guards
 

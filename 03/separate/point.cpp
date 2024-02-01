@@ -35,3 +35,7 @@ istream & operator>>(istream & is, point & p)
 
     return is;
 }
+
+point operator*(int c, point & p) {
+    return point {c * p.x, c * p.y};
+}
