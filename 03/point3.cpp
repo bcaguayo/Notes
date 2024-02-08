@@ -10,9 +10,9 @@ class point
 public:
     // in the initializer list C++ can differentiate between the parameter and the member variable, but in the body of the constructor you would have to use this->x to refer to the member variable rather than the parameter
     // fix this
-    point(int x, int y) : x {x}, y{y} {
-        // _x = x;
-        // _y = y;
+    point(int _x, int _y) {
+        _x = x;
+        _y = y;
     }
 
     // colon syntax gets constructed automatically
