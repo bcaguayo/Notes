@@ -2,7 +2,22 @@
 
 using namespace std;
 
+// Templates for runtime polymorphism
+// Inheritance also works for compile time polymorphism
+// Virtual functions have significant overhead
+template <>
+void foo(int t) {
+    cout << "specialized for t: " << t << endl;
+}
+
+
 template <typename T>
+
+// using T is like class
+void f(T t, U u) {
+    std::cout << t << "" << u;
+}
+
 void my_swap (T & a, T & b)
 {
     T c {a};

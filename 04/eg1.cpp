@@ -12,6 +12,8 @@ public:
         cout << "ctor\n";
     }
 
+    // Destructor is a function called when a class is aobut to go out of scope
+    // Before it is deallocated
     virtual ~integer()
     {
         delete p;
