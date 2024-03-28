@@ -11,4 +11,15 @@ int main()
     // c2 = 1;
     // but we can use the constructor to do this
     c2 = color {1};
+
+    switch (c2) {
+    case color::red :
+        break;
+    case color::green : 
+        break;
+    case color::blue :
+        break;
+    default:
+        break;
+    }
 }

@@ -26,5 +26,7 @@ int main()
         cout << s.value() << "\n";
     }
 
+    // value or default
+    // expressive, design apis
     cout << divide(10, 0).value_or("divide by 0") << "\n";
 }
