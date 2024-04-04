@@ -23,3 +23,6 @@ int main()
         v.emplace_back();
     }
 }
+
+// use emplace back more often than push_back
+// emplace_back is more efficient than push_back, 

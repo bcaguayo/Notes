@@ -14,3 +14,6 @@ int main()
     for (auto i : l)
         cout << i << "\n";
 }
+
+// more useful than vector if putting a lot of elements in the middle
+// vector is faster in general

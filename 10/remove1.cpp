@@ -20,3 +20,5 @@ int main()
     for (auto & i : v)
         cout << i << " ";
 }
+
+// std library contains many basic methods useful among all containers

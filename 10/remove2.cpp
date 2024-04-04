@@ -14,3 +14,7 @@ int main()
     for (auto & i : v)
         cout << i << " ";
 }
+
+// end starts from the back, can append
+// erase, insert invalidate iterators
+// no trees on c++ unfortunately

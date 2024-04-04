@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+// dont use namespace in large projects
+// can cause name conflicts
 using namespace std;
 
 int main()
@@ -16,3 +18,8 @@ int main()
     for (auto i : v)
         cout << i << "\n";
 }
+
+// vector is like java arraylist
+// use vector instead of list
+
+// vector and array are the most used

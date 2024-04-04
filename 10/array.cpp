@@ -32,3 +32,7 @@ int main()
 
     // cout << get<3>(arr) << "\n"; // Won't compile
 }
+
+// array underated
+// even if not using whole array, can estimate to certain size
+// vector has more overhead
